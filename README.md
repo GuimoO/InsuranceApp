@@ -1,2 +1,4 @@
-# InsuranceApp
-Application de souscription de micro-assurance en partenariat avec INSEAD
+InsuranceApp
+============
+
+A Symfony project created on May 10, 2017, 8:12 pm.

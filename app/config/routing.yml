@@ -1,0 +1,4 @@
+insurance_app:
+    resource: "@InsuranceAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
