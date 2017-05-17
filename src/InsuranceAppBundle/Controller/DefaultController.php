@@ -10,4 +10,5 @@ class DefaultController extends Controller
     {
         return $this->render('InsuranceAppBundle:Default:index.html.twig');
     }
+
 }

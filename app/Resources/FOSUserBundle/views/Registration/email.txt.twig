@@ -1,0 +1,26 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block subject %} Registration Successfully!
+{%- autoescape false -%}
+
+{{ 'registration.email.subject'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}) }}
+
+{%- endautoescape -%}
+{% endblock %}
+
+{% block body_text %}
+Hello {{ user.username }} !
+
+You can reset your password by accessing {{ confirmationUrl }}
+
+Greetings,
+the App team
+{% autoescape false %}
+
+{{ 'registration.email.message'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}) }}
+
+{% endautoescape %}
+{% endblock %}
+
+{% block body_html %}
+{% endblock %}

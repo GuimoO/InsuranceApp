@@ -1,0 +1,84 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+{% block stylesheets %}
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    {#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">#}
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/insuranceapp/css/loginPage.css') }}">
+
+{% endblock %}
+
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+
+<div class="container homeloginpage">
+
+    <form action="{{ path("fos_user_security_check") }}" method="post">
+        {% if csrf_token %}
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        {% endif %}
+
+        <div class="row">
+            <div class=" col s12">
+                <div>
+                    <img class="logoApp" src="{{  asset('bundles/insuranceapp/img/logoApp.png') }}" alt="logoApp">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <h2 class="h2">Username:</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="    Username or Email"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <h2 class="h2">Password:</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <input type="password" id="password" name="_password" required="required" placeholder="    Password" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s8 offset-s2 btnsubmit">
+                <button type="submit" id="_submit" name="_submit" {#value="{{ 'security.login.submit'|trans }}"#}>
+                    <i class="material-icons medium">skip_next</i>
+                </button>
+            </div>
+        </div>
+    </form>
+
+
+{{ render('registerform') }}
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+{#
+
+<!-- Boostrap Js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>#}

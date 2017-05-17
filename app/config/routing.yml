@@ -2,9 +2,6 @@ fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
 
-
-
-
 insurance_app:
     resource: "@InsuranceAppBundle/Resources/config/routing.yml"
     prefix:   /
