@@ -3,47 +3,66 @@
     padding:0;
     width:100%;
     text-align: center;
+    font-family: "Myriad Pro Regular";
 }
 
 .logoApp {
 
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding:0;
 }
 
-.h2{
-    margin-bottom: 0;
-    margin-top: 20px;
-    font-size: 1.5em;
+.inputco{
+    height:45px;
+    margin-bottom: 10px;
 }
 
 #username, #password  {
 
     margin:0;
     padding:0;
-    height:30px;
+    height:40px;
     border-radius: 10px;
-    color: black;
-    width: 100%;
-    border: 1px solid black;
+    color: #3579bb;
+    border: 2px solid #3579bb;
+    font-family: "Myriad Pro Regular";
+    font-size: 1em;
+    width:80%;
 }
 
 .btnsubmit > button {
 
     margin:0;
-    margin-top:10px;
     padding: 0;
-    height: 70px;
-    width: 100%;
-    font-size: 3em;
+    height:40px;
+    width: 80%;
     border: hidden;
     background-color: white;
-    color: black;
-
+    color:#3579bb;
 }
 
-.row {
-   margin:0;
+.btnregister{
+    margin:0;
+    margin-top:20px;
+    padding:0;
+    height:60px;
 }
 
+.btnregister > button {
+    margin:0;
+    margin-top:5px;
+    padding: 0;
+    height:50px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #3579bb;
+    background-color: transparent;
+
+}
+.btnregister a:link , .btnregister a:visited {
+
+    color:#3579bb;
+    text-decoration: none;
+    font-size:1.5em;
+}

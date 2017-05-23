@@ -12,33 +12,20 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('bundles/insuranceapp/css/loginPage.css') }}">
 
 {% endblock %}
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {{ form_widget(form) }}
 
 
-    {#{{ form_widget(form) }}#}
-
-
-
-<div class="row">
-    <div class="col s8 offset-s2">
-        {#<input type="text" placeholder="Email" value="{{ form_widget(form.email) }}"/>#}
-        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-
-        {{ form_end(form) }}
-    </div>
+<div>
+    <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    <i class="material-icons medium">done</i>
 </div>
+{{ form_end(form) }}
 
 
 
 
 
-
-
-
-    <div>
-        <button type="submit" value="{{ 'registration.submit'|trans }}">
-            <i class="material-icons medium">done</i>
-        </button>
-    </div>
 
 
 <!-- Compiled and minified JavaScript -->

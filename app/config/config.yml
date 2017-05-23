@@ -65,11 +65,10 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: gmail
-    host: stmp.gmail.com
-    encryption: ssl
-    username: guiguismoo@gmail.com
-    password: motdepasse69
+    transport: '%mailer_transport%'
+    host: '%mailer_host%'
+    username: '%mailer_user%'
+    password: '%mailer_password%'
     spool: { type: memory }
 
 #Fosuser Configuration
@@ -87,22 +86,6 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "%mailer_user%"
-    # configure la confirmation d'inscription et réinitialisation du MP
-    registration:
-        confirmation:
-            enabled: true
-        #email: ???
-            from_email:
-                address: guiguismoo@gmail.com
-                sender_name:  InsuranceApp Registration
-            template:   '@FOSUser/Registration/email.txt.twig'
-
-    resetting:
-        email:
-            from_email:
-                address: guiguismoo@gmail.com
-                sender_name: InsuranceApp Resetting
-            template: '@FOSUser/Resetting/email.txt.twig'
 
     #Mailer implementation =>uses Swiftmailer to send emails and Twig blocks to render the message.
     service:

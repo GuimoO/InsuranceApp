@@ -11,4 +11,9 @@ class DefaultController extends Controller
         return $this->render('InsuranceAppBundle:Default:index.html.twig');
     }
 
+    public function navbarAction()
+    {
+        return $this->render('@InsuranceApp/Default/layout.html.twig');
+    }
+
 }
