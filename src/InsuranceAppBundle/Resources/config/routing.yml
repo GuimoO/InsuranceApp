@@ -23,15 +23,17 @@ fos_user_change_password:
 
 
 
-
+# PROFIL GENERAL HOMEPAGE
 insurance_app_homepage:
     path: /
     defaults: { _controller: InsuranceAppBundle:Default:index }
 
+# PROFIL DETAILLE USER
 insurance_app_profile:
     path: /profileInfo
     defaults: { _controller: InsuranceAppBundle:Default:profile }
 
+# EXEMPLES DE CONTRATS USER
 insurance_app_plandetail1:
     path: /Plan1
     defaults: { _controller: InsuranceAppBundle:Default:plan1 }
@@ -43,3 +45,13 @@ insurance_app_plandetail2:
 insurance_app_plandetail3:
     path: /Plan3
     defaults: { _controller: InsuranceAppBundle:Default:plan3 }
+
+# SOS PAGE
+insurance_app_SOS:
+    path: /SOS
+    defaults: { _controller: InsuranceAppBundle:Default:sos }
+
+# CHAT PAGE
+insurance_app_chat:
+    path: /chat
+    defaults: { _controller: InsuranceAppBundle:Default:chat }

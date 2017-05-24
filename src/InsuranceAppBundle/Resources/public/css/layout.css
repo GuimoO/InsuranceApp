@@ -8,6 +8,7 @@
     position:fixed;
     bottom:0;
     background-color: #3579bb;
+    z-index: 5000;
 }
 .rowcustom{
     height:100px;
@@ -30,6 +31,10 @@
     padding-bottom:5px;
     font-weight:bold;
     font-size: 1.2em;
+}
+
+.row a:active{
+
 }
 
 

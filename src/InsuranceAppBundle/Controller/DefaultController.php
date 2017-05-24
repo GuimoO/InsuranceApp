@@ -35,4 +35,14 @@ class DefaultController extends Controller
     {
         return $this->render('@InsuranceApp/Default/plan3.html.twig');
     }
+
+    public function sosAction()
+    {
+        return $this->render('@InsuranceApp/Default/SOS.html.twig');
+    }
+
+    public function chatAction()
+    {
+        return $this->render('@FOSUser/Default/chat.html.twig');
+    }
 }

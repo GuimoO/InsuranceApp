@@ -1,0 +1,39 @@
+.sos{
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:75px;
+    height:59px;
+}
+.contsos{
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 600px;
+    background-color: white;
+}
+.rowsos{
+    margin:0;
+    padding:0;
+    padding-left:25px;
+    padding-right: 20px;
+    width:100%;
+    font-size:1.3em;
+}
+.sosinfo{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#tisosinfo{
+    font-weight: bold;
+}
+#nbphone{
+    color:#3579bb;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.sosinfo ul{
+    padding-left:20px;
+}
