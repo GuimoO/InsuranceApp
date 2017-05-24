@@ -1,0 +1,96 @@
+{% extends '@InsuranceApp/Default/layout.html.twig' %}
+{% block stylesheets %}{% endblock %}
+
+
+{% block body %}
+
+    <div class="container contcustomhead">
+        <div class="row">
+            <a href="javascript:history.go(-1)">
+                <div class="col-xs-1 ch">
+                    <span class="fa fa-chevron-left fa-2x"></span>
+                </div>
+                <div class="col-xs-2 ba">
+                    <p>Back</p>
+                </div>
+            </a>
+            <div class="col-xs-6 tih2">
+                <h2>Profile</h2>
+            </div>
+            <div class="col-xs-3 logcorner">
+                <img id="log" src="{{ asset('bundles/insuranceapp/img/Wandersafe logo_icon-01.jpg') }}"/>
+            </div>
+        </div>
+    </div>
+
+<div class="container contcustomprofil">
+    <div class="row rowprofile">
+        <div class="col-xs-3 imgprofil"><span class="fa fa-user-circle-o fa-5x"></span></div>
+        <div class="col-xs-7 infopro"><h3>{{ app.user.FirstNames}} {{ app.user.Surname }}</h3><p id="p">Date of birth: 15/03/1985 </p></div>
+
+    </div>
+</div>
+
+<div class="container contscroll">
+    <div class="scrolldiv">
+        <div class="row rowprofileinfo">
+            <div class="col-xs-6 colinfo">
+
+                <h4 class="bold">Personal information</h4>
+                <p>Surname</p>
+                <p>First name</p>
+                <p>Gender</p>
+                <p>Nationality</p>
+                <p>Date of birth</p>
+
+                <h4 class="bold">Home adress</h4>
+                <p>Adress</p>
+                <p>Postcode</p>
+                <p>City</p>
+                <p>Country</p>
+
+                <h4 class="bold">Payment information</h4>
+                <h5 class="italic">Creditcard</h5>
+                <p>Cardholder Name</p>
+                <p>Card Number</p>
+                <p>End Date</p>
+                <p>CSV Number</p>
+
+                <h5 class="italic">PayPal</h5>
+                <p>Email</p>
+                <p>Password</p>
+            </div>
+
+            <div class="col-xs-6 colinfo">
+
+                <h4 class="bold vis">Personal information</h4>
+                <p>{{ app.user.Surname }}</p>
+                <p>{{ app.user.FirstNames }}</p>
+                <p>Male</p>
+                <p>{{ app.user.Nationality }}</p>
+                <p>15/03/1985</p>
+
+                <h4 class="bold vis">Home adress</h4>
+                <p>{{ app.user.Adress }}</p>
+                <p>{{ app.user.Postcode }}</p>
+                <p>{{ app.user.City }}</p>
+                <p>{{ app.user.Country }}</p>
+
+                <h4 class="bold vis">Payment information</h4>
+                <h5 class="vis">Creditcard</h5>
+                <p>{{ app.user.CardholderName }}</p>
+                <p>{{ app.user.CardNumber }}</p>
+                <p>{#{{ app.user.EndDate }}#}22/18</p>
+                <p>{{ app.user.CSVNumber }}</p>
+
+                <h5 class="vis">PayPal</h5>
+                <p>{#{{ app.user.PayPalEmail }}#}N/R</p>
+                <p>{#{{ app.user.PayPalEmail }}#}N/R</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+

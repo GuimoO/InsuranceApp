@@ -1,0 +1,41 @@
+/**********************************
+       CSS BANDEAU TITRE
+**********************************/
+.tih2 {
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:60px;
+    height:59px;
+}
+.tih2 h2{
+    margin-top:15px;
+}
+/****************************************
+        CSS ALL INFO PROFILE
+******************************************/
+.rowprofileinfo{
+    margin:0;
+    padding:0;
+    height:600px;
+    width:100%;
+    background-color: white;
+    border: 1px solid  #313130;
+}
+.colinfo{
+    padding:0;
+    padding-left:10px;
+    text-align: left;
+}
+.bold{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.italic{
+    font-style: italic;
+    font-weight: bold;
+}
+.vis{
+    visibility: hidden;
+}

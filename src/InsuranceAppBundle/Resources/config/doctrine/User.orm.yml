@@ -6,3 +6,68 @@ InsuranceAppBundle\Entity\User:
             type: integer
             generator:
                 strategy: AUTO
+
+
+    fields:
+        First_Names:
+            type: string
+            lenght: 50
+
+        Surname:
+            type: string
+            lenght: 50
+
+        Genre:
+            type: string
+            lenght: 20
+            nullable: true
+
+        Nationality:
+            type: string
+            lenght: 20
+
+        Date_of_Birth:
+            type: datetime
+            nullable: true
+
+        Adress:
+            type: string
+            lenght: 100
+
+        Postcode:
+            type: string
+            lenght: 30
+
+        City:
+            type: string
+            lenght: 40
+
+        Country:
+            type: string
+            lenght: 40
+
+        Cardholder_Name:
+            type: string
+            lenght: 50
+
+        Card_Number:
+            type: integer
+
+        End_Date:
+            type: datetime
+            nullable: true
+
+        CSV_Number:
+            type: integer
+
+        PayPal_Email:
+            type: text
+            lenght: 20
+            nullable: true
+
+        PayPal_Password:
+            type: text
+            lenght: 255
+            nullable: true
+
+

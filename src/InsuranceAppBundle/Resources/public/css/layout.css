@@ -1,45 +1,6 @@
-/**********************************
-       CSS BANDEAU
-**********************************/
-.contcustomhead{
-    width:100%;
-    height:60px;
-    margin:0;
-    padding:0;
-    position:fixed;
-    top:0;
-    background-color: #3579bb;
-
-}
-.contcustomhead h2 {
-    font-size: 2em;
-    color:white;
-    margin:0;
-    padding-top: 15px;
-    height:59px;
-}
-.ch{
-    margin:0;
-    padding:0;
-    padding-left: 15px;
-    text-align: center;
-    height:59px;
-    color:white;
-    padding-top: 15px;
-}
-.ba{
-    margin:0;
-    padding:0;
-    height:59px;
-    color:white;
-    font-weight: bold;
-    font-size: 1.2em;
-    padding-top: 18px;
-}
 /*********************************
         CSS NAVBAR!
 ***********************************/
-
 .contcustom{
     width:100%;
     margin:0;
@@ -48,14 +9,12 @@
     bottom:0;
     background-color: #3579bb;
 }
-
 .rowcustom{
     height:100px;
     width:100%;
     margin:0;
     padding:0;
 }
-
 .divnav{
 
     height:100px;
@@ -63,11 +22,7 @@
     color:white;
     text-align: center;
     padding:0;
-
 }
-
-
-
 .contcustom p{
     margin:0;
     margin-top:10px;

@@ -1,12 +1,90 @@
 {% extends 'InsuranceAppBundle:Default:layout.html.twig' %}
-
-{% block stylesheets %}
-{% endblock %}
+{% block stylesheets %}{% endblock %}
 
 {% block body %}
 
-{#<meta http-equiv="refresh" content="2; url="{{ path('fos_user_security_login') }}">#}
+    <div class="container contcustomhead">
+        <div class="row">
+            <div id="hide">
+               <a href="javascript:history.go(-1)">
+                    <div class="col-xs-1 ch">
+                        <span class="fa fa-chevron-left fa-2x"></span>
+                    </div>
+                    <div class="col-xs-2 ba">
+                        <p>Back</p>
+                    </div>
+               </a>
+            </div>
+            <div class="col-xs-6 tiindex">
+                <h2 id="tiindexh2">Wandersafe</h2>
+            </div>
+            <div class="col-xs-3 logcorner">
+                <img id="log" src="{{ asset('bundles/insuranceapp/img/Wandersafe logo_icon-01.jpg') }}"/>
+            </div>
+        </div>
+    </div>
 
-index page!
 
+
+<div class="container contcustomprofil">
+    <a class="refprofileinfo" href="{{ path('insurance_app_profile') }}">
+    <div class="row rowprofile">
+        <div class="col-xs-3 imgprofil"><span class="fa fa-user-circle-o fa-5x"></span></div>
+        <div class="col-xs-7 infopro"><h3>{{ app.user.FirstNames}} {{ app.user.Surname }}</h3><p id="p">Some info</p></div>
+        <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+    </div>
+   </a>
+</div>
+
+<div class="container contscroll">
+    <div class="scrolldiv">
+        <a class="refprofileinfo" href="{{ path('insurance_app_plandetail1')}}">
+            <div class="row rowprofile">
+                <div class="col-xs-3 imgprofil1"><span class="fa fa-suitcase fa-4x"></span></div>
+                <div class="col-xs-7"><h3>Travel Protection</h3><p id="p">Validity: xx-xx</p></div>
+                <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+            </div>
+        </a>
+
+        <a class="refprofileinfo" href="{{ path('insurance_app_plandetail2')}}">
+            <div class="row rowprofile">
+                <div class="col-xs-3 imgprofil1"><span class="fa fa-motorcycle fa-4x"></span></div>
+                <div class="col-xs-7"><h3>Motorcycle Plan</h3><p id="p">Validity: xx-xx</p></div>
+                <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+            </div>
+        </a>
+
+        <a class="refprofileinfo" href="{{ path('insurance_app_plandetail3')}}">
+        <div class="row rowprofile">
+            <div class="col-xs-3 imgprofil1"><span class="fa fa-futbol-o fa-4x"></span></div>
+            <div class="col-xs-7"><h3>Team sport Plan</h3><p id="p">Validity: xx-xx</p></div>
+            <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+        </div>
+        </a>
+
+        <div class="row rowprofile">
+            <div class="col-xs-3 imgprofil1"><span class="fa fa-gamepad fa-4x"></span></div>
+            <div class="col-xs-7"><h3>Game Plan</h3><p id="p">Validity: xx-xx</p></div>
+            <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+        </div>
+
+        <div class="row rowprofile">
+            <div class="col-xs-3 imgprofil1"><span class="fa fa-fighter-jet fa-4x"></span></div>
+            <div class="col-xs-7"><h3>Fly Plan</h3><p id="p">Validity: xx-xx</p></div>
+            <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+        </div>
+
+        <div class="row rowprofile">
+            <div class="col-xs-3 imgprofil1"><span class="fa fa-bicycle fa-4x"></span></div>
+            <div class="col-xs-7"><h3>Bicycle Plan</h3><p id="p">Validity: xx-xx</p></div>
+            <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+        </div>
+
+        <div class="row rowprofile">
+            <div class="col-xs-3 imgprofil1"><span class="fa fa-wheelchair-alt fa-4x"></span></div>
+            <div class="col-xs-7"><h3>Race Plan</h3><p id="p">Validity: xx-xx</p></div>
+            <div class="col-xs-2 pronext"><span class="fa fa-angle-right fa-5x"></span></div>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('bundles/insuranceapp/css/loginPage.css') }}">
 
 {% endblock %}
+
+<div class="container">
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
     {{ form_widget(form) }}
 
@@ -23,7 +25,7 @@
 {{ form_end(form) }}
 
 
-
+</div>
 
 
 

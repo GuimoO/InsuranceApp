@@ -21,6 +21,25 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
 
 
+
+
+
 insurance_app_homepage:
-    path:     /
+    path: /
     defaults: { _controller: InsuranceAppBundle:Default:index }
+
+insurance_app_profile:
+    path: /profileInfo
+    defaults: { _controller: InsuranceAppBundle:Default:profile }
+
+insurance_app_plandetail1:
+    path: /Plan1
+    defaults: { _controller: InsuranceAppBundle:Default:plan1 }
+
+insurance_app_plandetail2:
+    path: /Plan2
+    defaults: { _controller: InsuranceAppBundle:Default:plan2 }
+
+insurance_app_plandetail3:
+    path: /Plan3
+    defaults: { _controller: InsuranceAppBundle:Default:plan3 }

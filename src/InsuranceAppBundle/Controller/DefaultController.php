@@ -16,4 +16,23 @@ class DefaultController extends Controller
         return $this->render('@InsuranceApp/Default/layout.html.twig');
     }
 
+    public function profileAction()
+    {
+        return $this->render('@InsuranceApp/Default/profile.html.twig');
+    }
+
+    public function plan1Action()
+    {
+        return $this->render('@InsuranceApp/Default/plan1.html.twig');
+    }
+
+    public function plan2Action()
+    {
+        return $this->render('@InsuranceApp/Default/plan2.html.twig');
+    }
+
+    public function plan3Action()
+    {
+        return $this->render('@InsuranceApp/Default/plan3.html.twig');
+    }
 }

@@ -1,0 +1,132 @@
+body{
+    background-color:#c3c3c4;
+}
+/**********************************
+       CSS BANDEAU TITRE
+**********************************/
+.contcustomhead{
+    width:100%;
+    height:60px;
+    margin:0;
+    padding:0;
+    position:fixed;
+    top:0;
+    background-color: #3579bb;
+}
+.tiindex {
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:30px;
+    height:59px;
+}
+#tiindexh2{
+    margin:0;
+    margin-top:15px;
+}
+.ch{
+    margin:0;
+    padding:0;
+    padding-left: 15px;
+    text-align: center;
+    height:59px;
+    color:white;
+    padding-top: 15px;
+}
+.ba{
+    margin:0;
+    padding:0;
+    height:59px;
+    color:white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 18px;
+}
+.logcorner{
+    height:59px;
+    margin:0;
+    padding:0;
+    padding-top: 7px;
+    padding-left: 30px;
+}
+#log{
+    width:50px;
+    height:45px;
+    border-radius: 50%;
+}
+#hide{
+    margin:0;
+    padding:0;
+    width:100%;
+    visibility: hidden;
+}
+/**********************************
+    CSS BANDEAU PROFILE
+*************************************/
+.refprofileinfo , a:hover{
+    color:black;
+}
+.contcustomprofil{
+    width:100%;
+    margin:0;
+    padding:0;
+    padding-top:30px;
+    position:fixed;
+}
+.rowprofile{
+    margin:0;
+    padding:0;
+    height:100px;
+    width:100%;
+    background-color: white;
+    border: 1px solid  #313130;
+}
+.imgprofil{
+    margin:0;
+    padding:0;
+    height:100px;
+    text-align: center;
+    padding-top:15px;
+    color:#313130;
+}
+.infopro{
+    padding:0;
+    height:100px;
+}
+#p {
+    font-size: 1.2em;
+}
+.pronext{
+    padding:0;
+    padding-top:10px;
+    padding-left: 25px;
+    height:100px;
+}
+.imgprofil1{
+    margin:0;
+    padding:0;
+    height:100px;
+    text-align: center;
+    padding-top:20px;
+    color:#3579bb;
+}
+/**************************************
+    CSS LIST PLAN
+*******************************************/
+.contscroll{
+    margin:0;
+    padding:0 0;
+    width:100%;
+}
+.scrolldiv {
+    margin:0;
+    margin-top: 150px;
+    padding:0;
+    width:100%;
+    overflow: auto;
+    height: 360px;
+}
+
+
+
