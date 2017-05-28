@@ -1,6 +1,6 @@
-body{
-    background-color:#3579bb ;
-}
+/*body{*/
+    /*background-color:#3579bb ;*/
+/*}*/
 
 .homeloginpage {
     margin:0;
@@ -46,8 +46,8 @@ body{
     height:60px;
     width: 80%;
     border: hidden;
-    background-color: transparent;
-    color:white;
+    background-color:transparent ;
+    color:#3579bb;
 }
 
 .btnregister{
@@ -65,13 +65,13 @@ body{
     width: 80%;
     border-radius: 10px;
     border: 2px solid #3579bb;
-    background-color: white;
+    background-color: #3579bb;
     color:#3579bb;
 
 }
 .btnregister a:link , .btnregister a:visited {
 
-    color:#3579bb;
+    color:white;
     text-decoration: none;
     font-size:1.5em;
 }

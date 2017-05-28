@@ -43,6 +43,46 @@ class DefaultController extends Controller
 
     public function chatAction()
     {
-        return $this->render('@FOSUser/Default/chat.html.twig');
+        return $this->render('@InsuranceApp/Default/chat.html.twig');
+    }
+
+    public function addPlanAction()
+    {
+        return $this->render('@InsuranceApp/Default/addPlan.html.twig');
+    }
+
+    public function searchPlanAction()
+    {
+        return $this->render('@InsuranceApp/Default/searchPlan.html.twig');
+    }
+
+    public function qrCodeAction()
+    {
+        return $this->render('@InsuranceApp/Default/qrCode.html.twig');
+    }
+
+    public function nearMeAction()
+    {
+        return $this->render('@InsuranceApp/Default/nearMe.html.twig');
+    }
+
+    public function planFoundAction()
+    {
+        return $this->render('@InsuranceApp/Default/planFound.html.twig');
+    }
+
+    public function purchasePlanAction()
+    {
+        return $this->render('@InsuranceApp/Default/purchasePlan.html.twig');
+    }
+
+    public function purchasePlanConfAction()
+    {
+        return $this->render('@InsuranceApp/Default/purchasePlanConf.html.twig');
+    }
+
+    public function claimAction()
+    {
+        return $this->render('@InsuranceApp/Default/claim.html.twig');
     }
 }

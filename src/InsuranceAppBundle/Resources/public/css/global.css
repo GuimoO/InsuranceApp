@@ -8,9 +8,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Myriad Pro Regular';
-    url('Myriad Pro Regular.otf') format('otf') /* Safari, iOS, Mobile */
-    url('../Resources/public/font/Myriad Pro Regular.ttf') format('truetype') /* Firefox, Safari, iOS, Mobile */
+    font-family: "Myriad Pro Regular";
+    url("../Resources/public/font/Myriad Pro Regular.ttf") format("truetype") /* Firefox, Safari, iOS, Mobile */
 }
 *{
     font-family: "Myriad Pro Regular";

@@ -1,0 +1,37 @@
+{% extends 'InsuranceAppBundle:Default:layout.html.twig' %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+
+    <div class="container contcustomhead headnearme">
+        <div class="row">
+
+            <a href="javascript:history.go(-1)">
+                <div class="col-xs-1 ch">
+                    <span class="fa fa-chevron-left fa-2x"></span>
+                </div>
+                <div class="col-xs-2 ba">
+                    <p>Back</p>
+                </div>
+            </a>
+
+            <div class="col-xs-6 tinearme">
+                <h2 id="tiindexh2">Near me</h2>
+            </div>
+            <div class="col-xs-3 logcorner">
+                <img id="log" src="{{ asset('bundles/insuranceapp/img/Wandersafe logo_icon-01.png') }}"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contnearme">
+        <div class="row rownearme">
+            <div class="col-xs-12 nearme">
+                <a href="{{ path('insurance_app_planfound') }}">
+                    <img src="{{ asset('bundles/insuranceapp/img/mapaddplan.png')}}"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

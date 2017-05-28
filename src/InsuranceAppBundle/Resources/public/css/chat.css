@@ -8,21 +8,17 @@
     padding:0;
     padding-left:75px;
     height:59px;
-
 }
-
 .contchat{
     margin:0;
     padding:0;
     width: 100%;
 }
-
 .rowchat{
     margin:0;
     padding:0;
     width: 100%;
 }
-
 .chat{
     margin:0;
     padding:0;
@@ -31,5 +27,11 @@
 .chat img{
     width:100%;
     height: auto;
-
+}
+.scrolldivchat{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow: auto;
+    height:600px;
 }

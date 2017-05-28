@@ -1,0 +1,187 @@
+/*****************************************
+        CSS ADD PLAN
+********************************************/
+
+.contaddcustom{
+    width: 100%;
+    height: 600px;
+   background-color: white;
+}
+.tiaddplan{
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:45px;
+    height:59px;
+}
+.btnsearch{
+    margin:0;
+    margin-top:20px;
+    padding:0;
+    text-align: center;
+    height: 60px;
+}
+.btnsearch button, .btnsearch button:link, .btnsearch button:visited, .btnsearch button:hover{
+    margin:0;
+    margin-top:5px;
+    padding: 0;
+    height:50px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #3579bb;
+    background-color: #3579bb;
+    color:#3579bb;
+}
+.btnsearch a{
+     margin-left: -35px;
+     font-weight: 600;
+ }
+.hover:link , .hover:visited , .hover:hover{
+
+    color:white;
+    text-decoration: none;
+    font-size:1.5em;
+}
+.span {
+    float: left;
+    padding-left: 10px;
+}
+/***********************************************
+        CSS SEARCH PLAN
+ ************************************************/
+.tisearch{
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:30px;
+    height:59px;
+}
+.contsearch{
+    z-index: 1000;
+    background-color: white;
+}
+.rowsearch{
+    height:150px;
+}
+.divsearch{
+    width: 80%;
+    height:60px;
+    margin-left:40px;
+    margin-top:50px;
+    border-radius: 10px;
+    position:fixed;
+    background-color:#3579bb;
+}
+.divsearch a span{
+    color:white;
+    margin-top:10px;
+    margin-right: 20px;
+}
+#input{
+    background-color:#3579bb;
+    color:white;
+    border: transparent;
+    width:70%;
+    margin-top: -20px;
+}
+.contresult{
+    padding:0;
+    height:430px;
+    background-color: white;
+}
+.scrollsearch{
+    height: 300px;
+    width:100%;
+    overflow:auto;
+    background-color: white;
+}
+.rowresult{
+    height:800px;
+    padding:0;
+    width:100%;
+    padding-left:40px;
+    background-color: white;
+    z-index: 1;
+}
+.resultplan{
+    padding:0;
+    padding-top:500px;
+}
+.resultplan h3{
+    font-weight: bold;
+}
+.resultplan p{
+    font-size:1.3em;
+}
+#result a:link, #result a:visited, #result a:hover {
+    text-decoration: none;
+    color:black;
+}
+/***************************************************
+        CSS SCAN QR CODE
+ ***************************************************/
+.headqrcode{
+    z-index: 5000;
+}
+.tiqrcode{
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:20px;
+    height:59px;
+}
+.contqrcode{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.rowqrcode{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.qrcode{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.qrcode img{
+    width:100%;
+    height: auto;
+}
+/***************************************************
+        CSS NEAR ME
+ *****************************************************/
+.headnearme{
+    z-index: 5000;
+}
+.tinearme{
+    font-size: 2em;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:50px;
+    height:59px;
+}
+.contnearme{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.rownearme{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.nearme{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+.nearme img{
+    width:100%;
+    height: auto;
+}

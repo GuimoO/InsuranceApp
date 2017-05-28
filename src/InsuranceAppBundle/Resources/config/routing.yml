@@ -55,3 +55,37 @@ insurance_app_SOS:
 insurance_app_chat:
     path: /chat
     defaults: { _controller: InsuranceAppBundle:Default:chat }
+
+# ADD PLAN
+insurance_app_addplan:
+    path: /addPlan
+    defaults: { _controller: InsuranceAppBundle:Default:addPlan }
+
+insurance_app_search:
+    path: /search
+    defaults: { _controller: InsuranceAppBundle:Default:searchPlan }
+
+insurance_app_qrcode:
+    path: /qrcode
+    defaults: { _controller: InsuranceAppBundle:Default:qrCode }
+
+insurance_app_nearme:
+    path: /nearme
+    defaults: { _controller: InsuranceAppBundle:Default:nearMe }
+
+insurance_app_planfound:
+    path: /planfound
+    defaults: { _controller: InsuranceAppBundle:Default:planFound }
+
+insurance_app_purchaseplan:
+    path: /purchaseplan
+    defaults: { _controller: InsuranceAppBundle:Default:purchasePlan }
+
+insurance_app_purchaseplanconf:
+    path: /purchaseplanconf
+    defaults: { _controller: InsuranceAppBundle:Default:purchasePlanConf }
+
+# CLAIMS PAGE
+insurance_app_claim:
+    path: /claim
+    defaults: { _controller: InsuranceAppBundle:Default:claim }

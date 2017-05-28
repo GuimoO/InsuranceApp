@@ -5,20 +5,20 @@
 <div class="container contcustom">
     <div class="row rowcustom">
 
-        <a href="{{ path('insurance_app_homepage') }}">
-        <div class="col-xs-1 divnav"><p>Profil</p><span class="fa fa-user fa-3x "></span></div></a>
+        <a class="focus" href="{{ path('insurance_app_homepage') }}">
+        <div class="col-xs-1 divnav"><p>Profile</p><span class="fa fa-user fa-3x "></span></div></a>
 
-        <div class="col-xs-1 divnav"><p>Add Plan</p><span class="fa fa-plus fa-3x"></span></div>
+        <a class="focus" href="{{ path('insurance_app_addplan') }}">
+        <div class="col-xs-1 divnav"><p>Add Plan</p><span class="fa fa-plus fa-3x"></span></div></a>
 
-        <div class="col-xs-1 divnav"><p>Claims</p><span class="fa fa-file-text-o fa-3x"></span></div>
+        <a class="focus" href="{{ path('insurance_app_claim') }}">
+        <div class="col-xs-1 divnav"><p>Claims</p><span class="fa fa-file-text-o fa-3x"></span></div></a>
 
-        <a href="{{ path('insurance_app_chat') }}">
+        <a class="focus" href="{{ path('insurance_app_chat') }}">
         <div class="col-xs-1 divnav"><p>Chat</p><span class="fa fa-comments-o fa-3x"></span></div></a>
 
-        <a href="{{ path('insurance_app_SOS') }}">
-        <div class="col-xs-1 divnav"><p>SOS</p><span class="fa fa-ambulance fa-3x"></span></div></a>
+        <a class="focus" href="{{ path('insurance_app_SOS') }}">
+        <div class="col-xs-1 divnav"><p>SOS</p><img id="logsos" src="{{ asset('bundles/insuranceapp/img/SOS icon-01.png') }}"/></div></a>
     </div>
 </div>
 {% endblock %}
-
-
