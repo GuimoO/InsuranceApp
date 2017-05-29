@@ -89,3 +89,20 @@ insurance_app_purchaseplanconf:
 insurance_app_claim:
     path: /claim
     defaults: { _controller: InsuranceAppBundle:Default:claim }
+
+insurance_app_claimfilled:
+    path: /claimfilled
+    defaults: { _controller: InsuranceAppBundle:Default:claimfilled }
+
+insurance_app_claimsubmit:
+    path: /claimsubmit
+    defaults: { _controller: InsuranceAppBundle:Default:claimsubmit }
+
+insurance_app_claimhistory:
+    path: /claimhistory
+    defaults: { _controller: InsuranceAppBundle:Default:claimhistory }
+
+
+insurance_app_claim:inprogress:
+    path: /claiminprogress
+    defaults: { _controller: InsuranceAppBundle:Default:claimInProgress }

@@ -85,4 +85,24 @@ class DefaultController extends Controller
     {
         return $this->render('@InsuranceApp/Default/claim.html.twig');
     }
+
+    public function claimfilledAction()
+    {
+        return $this->render('@InsuranceApp/Default/claimfilled.html.twig');
+    }
+
+    public function claimsubmitAction()
+    {
+        return $this->render('@InsuranceApp/Default/claimsubmit.html.twig');
+    }
+
+    public function claimhistoryAction()
+    {
+        return $this->render('@InsuranceApp/Default/claimhistory.html.twig');
+    }
+
+    public function claimInProgressAction()
+    {
+        return $this->render('@InsuranceApp/Default/claimInProgress.html.twig');
+    }
 }

@@ -1,3 +1,6 @@
+/************************************************
+       CLAIM EMPTY/FILLED/MODAL
+*************************************************/
 .ticlaim {
     font-size: 2em;
     color:white;
@@ -5,4 +8,206 @@
     padding:0;
     padding-left:65px;
     height:59px;
+}
+.contscrollclaim{
+    margin:0;
+    padding:0;
+}
+.scrolldivclaim{
+    width:100%;
+    height:550px;
+    overflow: auto;
+}
+.contcont img{
+    width:100%;
+    height:auto;
+}
+.contcont{
+    height:710px;
+    margin:0;
+    padding:0;
+}
+.rowbtnclaimform{
+    height: 80px;
+    background-color: white;
+}
+.claimform{
+    text-align: center;
+}
+.claimform button, .claimform button:link, .claimform button:visited, .claimform button:hover {
+
+    width:80%;
+    height:45px;
+    border-radius: 5px;
+    border: 2px solid #3579bb;
+    background-color: #3579bb;
+    color:white;
+    font-size: 1.5em;
+}
+.claimform1 button, .claimform1 button:link, .claimform1 button:visited, .claimform1 button:hover {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: -15px;
+}
+.claimform1{
+    padding-right: 0;
+}
+.contpreviousclaim{
+    width:100%;
+    position:fixed;
+    bottom:100px;
+    z-index: 5000;
+    height:80px;
+}
+.rowpreviousclaim{
+    height: 80px;
+    background-color: white;
+}
+.btnpreviousclaim{
+    margin:0;
+    margin-top:10px;
+    padding:0;
+    text-align: center;
+    height: 70px;
+    font-size: 1.1em;
+}
+.btnpreviousclaim span{
+    float:left;
+    font-size: 1.6em;
+}
+.btnpreviousclaim  button, .btnpreviousclaim  button:link, .btnpreviousclaim  button:visited, .btnpreviousclaim  button:hover  {
+    /*margin:0;*/
+    /*margin-top:5px;*/
+    /*padding: 0;*/
+    height:60px;
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid #3579bb;
+    background-color: #3579bb;
+    color:white;
+    font-size: 1.5em;
+}
+/****************************************************
+        CLAIM HISTORY
+*****************************************************/
+.contcustomclaim{
+    width:100%;
+    margin:0;
+    padding:0;
+    padding-top:30px;
+}
+.rowclaimbandeau{
+    margin:0;
+    padding:0;
+    height:100px;
+    width:100%;
+    background-color: white;
+    border: 1px solid grey;
+    position: fixed;
+    color:black;
+
+}
+.spanclaim{
+    height:100px;
+    padding:0;
+    padding-top: 15px;
+    padding-left: 50px;
+    font-size: 1.5em;
+}
+.claimtitle{
+    height:100px;
+    padding:0;
+    padding-top: 35px;
+}
+.claimtitle h3{
+    margin:0;
+}
+.conthistory, .ahrefclaimstatus:link, .ahrefclaimstatus:visited, .ahrefclaimstatus:hover{
+    padding:0;
+    margin: 0;
+    margin-top: 140px;
+    width: 100%;
+    height:400px;
+    background-color: white;
+    color:black;
+}
+.rowhistory{
+    margin:0;
+    height:30px;
+    background-color: white;
+}
+.rowhistory div{
+    padding:0;
+    padding-left: 40px;
+}
+.rowhistory h3{
+    margin:0;
+    padding: 0;
+    font-weight: bold;
+}
+.rowclaim{
+    margin:0;
+    padding:0;
+    height:100px;
+    width:100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+.rowclaim h3{
+    margin:0;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-size: 1.8em;
+}
+.date{
+    font-size: 1.3em;
+}
+.rowclaim div{
+    height:100px;
+    padding-right:0 ;
+}
+.status{
+    font-size: 1.7em;
+    padding-top: 17px;
+}
+/*******************************************************
+        CLAIM IN PROGRESS
+********************************************************/
+.cont3btn{
+    width:100%;
+    padding-top: 120px;
+}
+.btn3{
+    margin:0;
+    margin-top:5px;
+    padding:0;
+    text-align: center;
+    height: 50px;
+}
+.btn3 button, .btn3 button:link, .btn3 button:visited, .btn3 button:hover{
+    margin:0;
+    margin-top:5px;
+    padding: 0;
+    height:40px;
+    width: 80%;
+    border-radius:5px;
+    border: 2px solid #3579bb;
+    background-color: #3579bb;
+    color:white;
+    font-size: 1.5em;
+}
+.scrolldivclaimfilled{
+    margin:0;
+    margin-top: 20px;
+    padding:0;
+    width:100%;
+    overflow: auto;
+    height: 330px;
+}
+.divimgclaimfilled{
+    padding:0;
+}
+.divimgclaimfilled img{
+    width:100%;
+    height:580px;
 }

@@ -33,16 +33,6 @@ class UserType extends AbstractType
             ->add('PayPal_Password');
     }
     
-    /**
-     * {@inheritdoc}
-     */
-    public function configureOptions(OptionsResolver $resolver)
-    {
-        $resolver->setDefaults(array(
-            'data_class' => 'InsuranceAppBundle\Entity\User'
-        ));
-    }
-
 
     public function getParent()
     {
