@@ -123,11 +123,11 @@ body{
 }
 .scrolldiv {
     margin:0;
-    margin-top: 160px;
+    margin-top: 170px;
     padding:0;
     width:100%;
     overflow: auto;
-    height: 450px;
+    height: 370px;
 }
 .logplan{
     width:65px;
