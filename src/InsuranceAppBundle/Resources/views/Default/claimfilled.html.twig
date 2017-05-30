@@ -30,7 +30,8 @@
             <div class="container contcont">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="{{ asset('bundles/insuranceapp/img/claim01filled.png')}}"/>
+                        <a href="{{ path('insurance_app_claimsubmit') }}">
+                        <img src="{{ asset('bundles/insuranceapp/img/claim01filled.png')}}"/></a>
                     </div>
                 </div>
             </div>
@@ -38,10 +39,10 @@
 
             <div class="row rowbtnclaimform">
                 <div class="col-xs-6 claimform claimform1">
-                    <a href="{{ path('insurance_app_claimsubmit') }}">
+
                         <button type="button" class="btn btn-default">Add new claim
                         </button>
-                    </a>
+
                 </div>
 
                 <div class="col-xs-6 claimform">
