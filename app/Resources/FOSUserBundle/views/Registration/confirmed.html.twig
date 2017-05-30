@@ -7,4 +7,10 @@
     {% if targetUrl %}
     <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
     {% endif %}
+
+    {% block body %}
+        <meta http-equiv="refresh" content="3; url={{ path('insurance_app_homepage') }}">
+
+
+    {% endblock %}
 {% endblock fos_user_content %}

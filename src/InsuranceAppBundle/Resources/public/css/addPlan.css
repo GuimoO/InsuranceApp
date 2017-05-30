@@ -96,6 +96,8 @@
     width:100%;
     overflow:auto;
     background-color: white;
+    position:fixed;
+
 }
 .rowresult{
     height:800px;

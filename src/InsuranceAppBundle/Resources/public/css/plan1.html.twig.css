@@ -60,6 +60,8 @@
     width:100%;
     overflow: auto;
     height: 360px;
+    position:fixed;
+
 }
 .rowpurchase{
     height: 60px;
