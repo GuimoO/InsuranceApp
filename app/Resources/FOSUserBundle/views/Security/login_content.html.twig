@@ -13,49 +13,52 @@
 
 
 <div class="container homeloginpage">
+    <div class="row">
+        <div class="col-xs-12">
 
-    <form action="{{ path("fos_user_security_check") }}" method="post">
-        {% if csrf_token %}
-            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-        {% endif %}
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div>
-                    <img class="logoApp" src="{{  asset('bundles/insuranceapp/img/Wandersafe logo_full-01.jpg') }}" alt="logoApp">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div>
+                            <img class="logoApp" src="{{  asset('bundles/insuranceapp/img/Wandersafe logo_full-01.jpg') }}" alt="logoApp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 inputco">
+                        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder=" Username or Email"/>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xs-12 inputco">
+                        <input type="password" id="password" name="_password" required="required" placeholder=" Password" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s8 offset-s2 btnsubmit">
+                        <button type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">
+                            <span class="fa fa-check fa-4x"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-xs-12 btnregister">
+                    <button type="button" class="btn btn-default">
+                        <a href="{{ path('fos_user_registration_register') }}">Registration</a>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-xs-12 inputco">
-                <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder=" Username or Email"/>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-xs-12 inputco">
-                <input type="password" id="password" name="_password" required="required" placeholder=" Password" />
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col s8 offset-s2 btnsubmit">
-                <button type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">
-                    <span class="fa fa-check fa-4x"></span>
-                </button>
-            </div>
-        </div>
-    </form>
-    <div class="row">
-        <div class="col-xs-12 btnregister">
-            <button type="button" class="btn btn-default">
-                <a href="{{ path('fos_user_registration_register') }}">Registration</a>
-            </button>
-        </div>
     </div>
-
 </div>
 
 
